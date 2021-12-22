@@ -19,9 +19,9 @@ public class CosUtils {
     // 此处填写的存储桶名称
     private static final String bucketName = "blog-1300811828";
     //secretId
-    private static final String SecretId = "AKIDrWHnOlxuXxZMwKvhkX6ZsUn10KQMhF7k";
+    private static final String SecretId = "";
     //SecretKey
-    private static final String SecretKey = "YqRmtpgLmzzoNg9j6LPEBsLMk01tX6R9";
+    private static final String SecretKey = "";
 
 
     // 1 初始化用户身份信息(secretId, secretKey，可在腾讯云后台中的API密钥管理中查看！
