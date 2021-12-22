@@ -1,0 +1,9 @@
+server:
+  port: 9002
+
+tencent:
+  path: https://blog-1300811828.cos.ap-shanghai.myqcloud.com/
+
+spring:
+  application:
+    name: cos-multipart-service

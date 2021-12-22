@@ -1,2 +1,0 @@
-# MovieTicket
-基于springcloud+springcloudAlibaba的电影购票系统
