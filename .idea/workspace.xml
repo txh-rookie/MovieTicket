@@ -5,8 +5,146 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc6150e-55ea-43e0-9427-a850f31d3b9c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/serookie/MainGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/serookie/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/serookie/filter/AuthGlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_base/src/main/java/com/serookie/movie/utils/DateFormatUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_base/src/main/java/com/serookie/movie/utils/JwtTokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_base/src/main/java/com/serookie/movie/utils/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_base/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/ResultEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/Swiper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/vo/CinemaVoQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/vo/HallVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/vo/OrderVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/vo/RegisterVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/vo/UserAddVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/vo/UserLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/vo/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/CinemaMain9003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/controller/CinemaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/controller/HallController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/controller/ScheduleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/mapper/CartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/mapper/CinemaMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/mapper/HallMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/mapper/OrderInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/mapper/ScheduleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/mapper/ServiceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/CinemaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/HallService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/OpnFeign/AreaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/OpnFeign/CosService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/OpnFeign/MovieService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/OpnFeign/MsmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/OrderInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/ScheduleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/impl/CinemaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/impl/HallServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/service/impl/ScheduleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/resources/mapper/CinemaMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/resources/mapper/HallMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/resources/mapper/ServiceMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/controller/AreaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/controller/SwiperController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/mapper/AreaMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/mapper/CommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/mapper/SwiperMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/AreaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/SwiperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/impl/AreaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/impl/SwiperServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/openFeign/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/resources/mapper/MovieMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_film/src/test/java/MovieExcelDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_log/src/main/java/com/serookie/movie/CustomAnnotation/LogAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_log/src/main/java/com/serookie/movie/config/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_log/src/main/java/com/serookie/movie/mapper/LogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_log/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_msm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_msm/src/main/java/com/serookie/MainMsm9004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_msm/src/main/java/com/serookie/controller/MsmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_msm/src/main/java/com/serookie/service/Impl/MsmServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_msm/src/main/java/com/serookie/service/MsmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_msm/src/main/java/com/serookie/utils/RandomUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_msm/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_msm/src/test/java/MailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/MainUserCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/controller/ActiveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/mapper/ActiveMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/mapper/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/mapper/xml/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/service/ActiveService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/service/Impl/ActiveServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/service/Impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/service/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_commons/movie_base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_base/src/main/java/com/serookie/movie/utils/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_commons/movie_base/src/main/java/com/serookie/movie/utils/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_base/src/main/java/com/serookie/movie/utils/handler/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_commons/movie_base/src/main/java/com/serookie/movie/utils/handler/CustomException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_base/src/main/java/com/serookie/movie/utils/handler/MyMateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_commons/movie_base/src/main/java/com/serookie/movie/utils/handler/MyMateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity/MovieVoQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/vo/MovieVoQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_common_api/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_common_api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_common_api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/movie_common_api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_cos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_cos/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/CosMovieMain9000.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/CosMovieMain9000.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/controller/MultipartFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/controller/MultipartFileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/service/Impl/MultipartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/service/Impl/MultipartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/service/MultipartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/service/MultipartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/utils/CosUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_cos/src/main/java/com/serookie/movie/utils/CosUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_cos/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_cos/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_cos/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_cos/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/MovieFilmMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/MovieFilmMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/mapper/MovieMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/mapper/MovieMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/mapper/xml/MovieMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_cinema/src/main/resources/mapper/ScheduleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/impl/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/src/test/java/GodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/src/test/java/GodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/movie_film/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/movie_film/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +154,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -40,6 +180,11 @@
         <option name="userSettingsFile" value="/opt/maven/apache-maven-3.8.3/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
@@ -47,7 +192,6 @@
   <component name="ProjectId" id="226CicfKT0MtS43oKbpnD75YtvG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -60,6 +204,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -67,13 +212,33 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.serookie.movie.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/movie_service/movie_acl/src/main/java/com/serookie/controller" />
+      <recent name="$PROJECT_DIR$/movie_service/movie_cinema/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java/com/serookie/entity" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java/com/serookie/mapper/xml" />
+      <recent name="$PROJECT_DIR$/movie_service/movie_acl/src/main/java/com/serookie/mapper/xml" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/movie_service/movie_film/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/movie_service" />
-      <recent name="$PROJECT_DIR$/movie_service/movie_cos" />
-      <recent name="$PROJECT_DIR$/movie_commons" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.serookie.service.Impl" />
+      <recent name="com.serookie.service" />
+      <recent name="com.serookie.mapper" />
+      <recent name="com.serookie.movie.service.impl" />
+      <recent name="com.serookie.movie.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -83,33 +248,63 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MovieFilmMain">
-    <configuration name="GodeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GodeTest" />
-      <module name="movie_film" />
+  <component name="RunManager" selected="Spring Boot.MainUserCenter">
+    <configuration name="MyBatisPlus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.serookie.MyBatisPlus" />
+      <module name="movie_common_api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.serookie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GodeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="movie_film" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GodeTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CosMovieMain9000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="movie_cos" />
+    <configuration name="CinemaMain9003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="movie_cinema" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.serookie.movie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.serookie.movie.CinemaMain9003" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CosMovieMain9000" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="movie_cos" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.serookie.movie.CosMovieMain9000" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.serookie.MainGateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainMsm" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="movie_msm" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.serookie.MainMsm9004" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainUserCenter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="movie_ucenter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.serookie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.serookie.MainUserCenter" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,10 +324,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MainUserCenter" />
+        <item itemvalue="Spring Boot.CinemaMain9003" />
         <item itemvalue="Spring Boot.MovieFilmMain" />
-        <item itemvalue="JUnit.GodeTest.test" />
-        <item itemvalue="Spring Boot.CosMovieMain9000" />
-        <item itemvalue="Application.GodeTest" />
+        <item itemvalue="Application.MyBatisPlus" />
       </list>
     </recent_temporary>
   </component>
@@ -169,11 +364,113 @@
       <workItem from="1640173581766" duration="13000" />
       <workItem from="1640173642663" duration="8000" />
       <workItem from="1640177600957" duration="614000" />
+      <workItem from="1640361489855" duration="684000" />
+      <workItem from="1640362369686" duration="1959000" />
+      <workItem from="1640404046294" duration="1655000" />
+      <workItem from="1640405764584" duration="1134000" />
+      <workItem from="1640407002900" duration="6523000" />
+      <workItem from="1640416437711" duration="1214000" />
+      <workItem from="1640496878542" duration="2989000" />
+      <workItem from="1640599292149" duration="605000" />
+      <workItem from="1640671288766" duration="14983000" />
+      <workItem from="1640777644646" duration="5631000" />
+      <workItem from="1640954829640" duration="6183000" />
+      <workItem from="1641014409590" duration="8694000" />
+      <workItem from="1641034889961" duration="4098000" />
+      <workItem from="1641040169321" duration="4111000" />
+      <workItem from="1641048748785" duration="5749000" />
+      <workItem from="1641057196256" duration="412000" />
+      <workItem from="1641099912220" duration="1867000" />
+      <workItem from="1641186249483" duration="11701000" />
+      <workItem from="1641278623112" duration="762000" />
+      <workItem from="1641449399000" duration="1075000" />
+      <workItem from="1641819927427" duration="2915000" />
+      <workItem from="1642508911734" duration="14000" />
+      <workItem from="1643536419063" duration="1859000" />
+      <workItem from="1643892705209" duration="7000" />
+      <workItem from="1644474033663" duration="645000" />
+      <workItem from="1644477288438" duration="926000" />
+      <workItem from="1644682187272" duration="56000" />
+      <workItem from="1644682267675" duration="449000" />
+      <workItem from="1644994720836" duration="251000" />
+      <workItem from="1646987403756" duration="1793000" />
+      <workItem from="1647239344806" duration="7442000" />
+      <workItem from="1647346267339" duration="192000" />
+      <workItem from="1647425678643" duration="7394000" />
+      <workItem from="1647516348499" duration="4696000" />
+      <workItem from="1647603575598" duration="6649000" />
+      <workItem from="1647679168753" duration="3261000" />
+      <workItem from="1647762146279" duration="9248000" />
+      <workItem from="1647940212130" duration="9518000" />
+      <workItem from="1648216287706" duration="2324000" />
+      <workItem from="1648293047359" duration="977000" />
+      <workItem from="1648375012961" duration="2474000" />
+      <workItem from="1648569767750" duration="639000" />
+      <workItem from="1648737353537" duration="9588000" />
+      <workItem from="1648900512911" duration="4245000" />
+      <workItem from="1648986658461" duration="6347000" />
+      <workItem from="1649077773557" duration="8793000" />
+      <workItem from="1649164770469" duration="35747000" />
+      <workItem from="1649426520954" duration="6399000" />
+      <workItem from="1649504749737" duration="13314000" />
+      <workItem from="1649575498816" duration="9251000" />
+      <workItem from="1649661370211" duration="1410000" />
+      <workItem from="1649663458880" duration="4644000" />
+      <workItem from="1649924881995" duration="11464000" />
+      <workItem from="1650109493163" duration="13081000" />
+      <workItem from="1650266061823" duration="55915000" />
+      <workItem from="1650774170036" duration="5841000" />
+      <workItem from="1650965915243" duration="32000" />
+      <workItem from="1650965986558" duration="3000" />
+      <workItem from="1651070104769" duration="8715000" />
+      <workItem from="1651160086223" duration="57510000" />
+      <workItem from="1651501018904" duration="10399000" />
+      <workItem from="1651584919220" duration="1833000" />
+      <workItem from="1651591063146" duration="13538000" />
+      <workItem from="1652087730523" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.alibaba.fastjson.JSONException" package="com.alibaba.fastjson" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.web.method.annotation.MethodArgumentTypeMismatchException" package="org.springframework.web.method.annotation" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/movie_service/movie_film/src/main/java/com/serookie/movie/service/impl/CommentServiceImpl.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/controller/CinemaController.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/movie_service/movie_cinema/src/main/java/com/serookie/movie/controller/OrderController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="all.get(1)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

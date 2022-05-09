@@ -14,7 +14,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
-@EnableSwagger2
+//@EnableSwagger2
 public class SwaggerConfig {
 
     @Bean
@@ -34,7 +34,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title("kevintam项目接口文档").
                 description("kevintam项目接口文档")
-                .contact(new Contact("kevintam","http://localhost:9091/doc.html","843808107@qq.com"))
+                .contact(new Contact("kevintam","https://serookie.com","843808107@qq.com"))
                 .version("1.0")
                 .build();
     }

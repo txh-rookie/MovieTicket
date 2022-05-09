@@ -10,7 +10,7 @@ public class LoginController {
 
     @PostMapping("/login")
     public Result login(){
-       return Result.ok().message("登录成功").data("token","admin").data("name","https://www.static.talkxj.com/avatar/user.png");
+       return Result.ok().message("登录成功").data("token","admin").data("name","https://apic.douyucdn.cn/upload/avatar_v3/201807/125191d284e40805300533323fce2f18_middle.jpg");
     }
     @GetMapping("/info")
     public Result info(){

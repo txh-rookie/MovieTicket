@@ -7,12 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="movie_base" />
-        <module name="movie_film" />
         <module name="movie_cos" />
+        <module name="movie_msm" />
+        <module name="movie_log" />
+        <module name="api-gateway" />
+        <module name="movie_cinema" />
+        <module name="movie_film" />
+        <module name="movie_ucenter" />
         <module name="movie_common_api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="movie_acl" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

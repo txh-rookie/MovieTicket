@@ -20,6 +20,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
+@TableName("movie_film")
 @ApiModel(value="影片对象", description="")
 public class Movie implements Serializable {
 
@@ -27,9 +28,10 @@ public class Movie implements Serializable {
 
     @ApiModelProperty(value = "电影编号")
     @TableId(value = "movie_id", type = IdType.ASSIGN_ID)
-    private Long movieId;
+    private String movieId;
 
     @ApiModelProperty(value = "电影名称（中文）")
+    @TableField(value = "movie_cn_name")
     private String movieCnName;
 
     @ApiModelProperty(value = "电影名称（外语）")
@@ -37,6 +39,9 @@ public class Movie implements Serializable {
 
     @ApiModelProperty(value = "电影演职人员")
     private String movieActor;
+
+    @ApiModelProperty(value = "电影的图集")
+    public String movieAtlas;
 
     @ApiModelProperty(value = "电影导演")
     private String movieDirector;
@@ -55,7 +60,7 @@ public class Movie implements Serializable {
 
     @ApiModelProperty(value = "电影票房 默认为0")
     @TableField("movie_boxOffice")
-    private Float movieBoxoffice;
+    private Long movieBoxoffice;
 
     @ApiModelProperty(value = "电影参评人数 默认为0")
     @TableField("movie_commentCount")
@@ -63,7 +68,7 @@ public class Movie implements Serializable {
 
     @ApiModelProperty(value = "电影上映时间")
     @TableField("movie_releaseDate")
-    private Date movieReleasedate;
+    private String movieReleaseDate;
 
     @ApiModelProperty(value = "电影制片地区")
     private String movieCountry;
@@ -73,6 +78,7 @@ public class Movie implements Serializable {
 
     @ApiModelProperty(value = "电影状态 默认为1  1：在线 0：下架")
     private Integer movieState;
+
     @ApiModelProperty(value = "逻辑删除")
     @TableLogic
     private Integer deleted;

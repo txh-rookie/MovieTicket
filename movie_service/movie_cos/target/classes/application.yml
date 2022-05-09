@@ -1,9 +1,16 @@
 server:
   port: 9002
-
-tencent:
-  path: https://blog-1300811828.cos.ap-shanghai.myqcloud.com/
-
 spring:
   application:
     name: cos-multipart-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+tencent:
+  path: https://blog-1300811828.cos.ap-shanghai.myqcloud.com/
+

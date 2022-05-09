@@ -1,0 +1,19 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: api-gateway-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: api-gateway
+          uri: lb://movie-film-provider
+          predicates:
+            - Path=/movie/**
+

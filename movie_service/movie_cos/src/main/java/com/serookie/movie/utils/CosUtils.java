@@ -23,7 +23,6 @@ public class CosUtils {
     //SecretKey
     private static final String SecretKey = "";
 
-
     // 1 初始化用户身份信息(secretId, secretKey，可在腾讯云后台中的API密钥管理中查看！
     private static COSCredentials cred = new BasicCOSCredentials(SecretId,SecretKey);
     // 2 设置bucket的区域, COS地域的简称请参照

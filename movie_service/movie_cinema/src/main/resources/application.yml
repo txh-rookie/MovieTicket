@@ -1,0 +1,67 @@
+server:
+  port: 9003
+spring:
+  profiles:
+    active: dev
+  #    数据库的相关配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/movie_film?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=Asia/Shanghai&characterEncoding=utf8
+    username: root
+    password: kevintam
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    redis的相关配置
+#  redis:
+#    host: 1.15.58.197
+#    password: kevintam
+#    port: 6379
+#    database: 0
+#    #超时时间
+#    timeout: 10000ms
+#    lettuce:
+#      pool:
+#        #最大连接数，默认8
+#        max-active: 8
+#        #最大连接阻塞等待时间，默认 -1（一直等待）
+#        max-wait: 10000ms
+#        #最大空闲连接，默认8
+#        max-idle: 200
+#        #最小空闲连接
+#        min-idle: 5
+  #    日期格式的相关配置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  #    文件上传的设置
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 10MB
+  application:
+    name: cinema-service-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+#mybatis-plus的相关配置
+mybatis-plus:
+#    configuration:
+#      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-not-delete-value:  0 #逻辑未删除
+      logic-delete-field: 1 #逻辑已删
+  mapper-locations: classpath:mapper/*Mapper.xml
+feign:
+  httpclient:
+    connection-timeout: 60000
+  client:
+    config:
+      default:
+        connectTimeout: 60000
+        readTimeout: 60000
+

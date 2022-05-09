@@ -1,8 +1,10 @@
 package com.serookie.movie.service.Impl;
 
+import com.qcloud.cos.exception.CosClientException;
 import com.serookie.movie.service.MultipartService;
 import com.serookie.movie.utils.CosUtils;
 import com.serookie.movie.utils.handler.CustomException;
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -41,5 +43,23 @@ public class MultipartServiceImpl implements MultipartService {
             e.printStackTrace();
             throw new CustomException(4003,e.getMessage());
         }
+    }
+    /**
+     * 删除
+     * @param key
+     * @return
+     */
+    @Override
+    public boolean delMultipart(String key) {
+        if(Strings.isEmpty(key)){
+            throw new CustomException(5000,"文件名不能空");
+        }
+        try {
+
+            CosUtils.deletefile("/movie/"+key);
+        } catch (CosClientException e) {
+            throw new CustomException(5001,"文件删除错误");
+        }
+        return true;
     }
 }

@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/movie_commons/movie_base/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/movie_commons/movie_base/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/movie_commons/movie_common_api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/movie_commons/movie_common_api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movie_service/movie_cinema/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movie_service/movie_cinema/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/movie_service/movie_cos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/movie_service/movie_cos/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/movie_service/movie_film/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/movie_service/movie_film/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movie_service/movie_log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movie_service/movie_log/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movie_service/movie_msm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movie_service/movie_msm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movie_service/movie_ucenter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/movie_service/movie_ucenter/src/main/resources" charset="UTF-8" />
   </component>
 </project>

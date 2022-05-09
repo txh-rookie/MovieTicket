@@ -1,0 +1,20 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: movie-film-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+service:
+  url: http://cos-multipart-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

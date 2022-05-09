@@ -21,6 +21,7 @@ import java.io.IOException;
 @RestController
 @Api(value="文件上传的接口",tags={"文件上传的接口"})
 @RequestMapping("/cos")
+@CrossOrigin//解决跨域问题
 @Slf4j
 public class MultipartFileController {
 
@@ -30,13 +31,16 @@ public class MultipartFileController {
     @Resource
     private MultipartService service;
 
-    @PostMapping("/add")
+    @PostMapping("/multipart")
     @ApiOperation("上传文件")
     public Result multipartAdd(@ApiParam("文件上传的参数") @RequestParam("file")MultipartFile multipartFile){
         String url = service.addMultipart(multipartFile);
         return Result.ok().message("文件上传成功").data("url",COS_PATH+url);
     }
-
-
-
+    @DeleteMapping("/multipart/{key}")
+    @ApiOperation("文件的删除")
+    public Result delMultipart(@ApiParam("文件上传的kehy")@PathVariable("key") String key){
+        boolean flag = service.delMultipart(key);
+        return flag?Result.ok().message("文件删除成功"):Result.error().message("文件删除失败");
+    }
 }

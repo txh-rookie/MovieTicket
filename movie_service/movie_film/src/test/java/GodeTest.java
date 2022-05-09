@@ -3,30 +3,29 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
-//import com.baomidou.mybatisplus.generator.AutoGenerator;
-//import com.baomidou.mybatisplus.generator.InjectionConfig;
-//import com.baomidou.mybatisplus.generator.config.*;
-//import com.baomidou.mybatisplus.generator.config.po.TableInfo;
-//import com.baomidou.mybatisplus.generator.config.rules.DateType;
-//import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
-//import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
+import com.serookie.entity.Area;
+import com.serookie.movie.mapper.AreaMapper;
 import lombok.experimental.Accessors;
 import org.junit.Test;
-import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.DigestUtils;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class GodeTest {
 
-    @Autowired
-    private RedissonClient redissonClient;
-    @Test
-    public void test(){
-        System.out.println(redissonClient);
-    }
+
+//
+//    @Autowired
+//    private RedissonClient redissonClient;
+//    @Test
+//    public void test(){
+//        System.out.println(redissonClient);
+//    }
 
 //        // 代码生成器
 //        AutoGenerator mpg = new AutoGenerator();
@@ -71,5 +70,10 @@ public class GodeTest {
 //        mpg.setStrategy(strategy);
 //// 6、执行
 //        mpg.execute();
-
+      @Test
+      public void test(){
+          String s = new String("123456");
+          String s1 = DigestUtils.md5DigestAsHex(s.getBytes(StandardCharsets.UTF_8));
+          System.out.println(s1);
+      }
 }
